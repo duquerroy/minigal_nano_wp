@@ -1,0 +1,149 @@
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Lato');
+			a,
+			h1 a {
+				text-decoration:none;
+			}
+			h1 {
+				margin:20px 0 0;
+				font-weight:normal;
+			}
+			body > header {
+				padding:1px;
+				text-align:center;
+			}
+			#container,
+			#innerheader {
+				margin:0 auto;
+				max-width:<% gallery_width %>;
+			}
+			#container header {
+				padding:2rem;
+			}
+			nav {
+				padding-top:15px;
+				font-size:1.3em;
+			}
+			body > nav {
+				text-align:center;
+			}
+			#folder_comment {
+				margin-bottom:10px;
+			}
+			#folder_comment a {
+				text-decoration:none;
+			}
+			#gallery li:hover img,
+			#gallery li img,
+			#gallery li em,
+			#gallery li:hover em,
+			#backtop,
+			#backtop:hover,
+			#backtop:active,
+			.b-lazy {
+				-webkit-transition:all .2s ease-in;
+				-o-transition:all .2s ease-in;
+				transition:all .2s ease-in;
+			}
+			#gallery {
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			#gallery li {
+				float:left;
+				position:relative;
+				overflow:hidden;
+			}
+			#gallery li img {
+				width:100%;
+			}
+			#gallery em {
+				display:block;
+				position:absolute;
+				top:100%;
+				bottom:0;
+				width:100%;
+				padding:40% 0;
+				color: #FFF;
+				text-align:center;
+				font-family:Lato,Lucida,serif;
+				font-size:1rem;
+				font-weight: 600;
+				font-style:normal;
+				background:rgba(0,0,0,.7);
+			}
+			#gallery a em:hover {
+				color: #FFF;
+			}
+			#gallery li:hover em {
+				top:0;
+			}
+			.clear {
+				clear:both;
+			}
+			footer {
+				font-weight: bold;
+				padding-top: 2rem;
+				margin: 25px 0px;
+				text-align: center;
+			}
+			/*----Back to top button---*/
+			#backtop {
+				display: block;
+				position: fixed;
+				bottom: 0;
+				right: 0;
+				padding: 1rem 4rem;
+				background-color: <% background_color_button_top %>;
+				color: <% color_button_top %>;
+				font-weight: bold;
+				-webkit-box-shadow:  0px 0px 2px -1px #000;
+				box-shadow:  0px 0px 2px -1px #000;
+
+			}
+			/*----lazyloading---*/
+			.b-lazy {
+				opacity: 0;
+			}
+			.b-lazy.b-loaded {
+				opacity: 1;
+			}
+			/*----responsive----*/
+			#gallery li {
+				width:25%;
+				height:0;
+				padding-bottom:25%;
+			}
+			@media(max-width:1000px) {
+				#gallery li {
+					width:32%;
+					padding-bottom:32%;
+				}
+			}
+			@media(max-width:800px) {
+				#gallery li {
+					width:48%;
+					padding-bottom:48%;
+				}
+			}
+			@media(max-width:450px) {
+				#gallery li {
+					width:100%;
+					padding-bottom:100%;
+				}
+			}
+		</style>
+		<header id="top-minigal" role="banner">
+			<div id="innerheader">
+				<% messages %>
+				<nav role="navigation"><% breadcrumb_navigation %></nav>
+			</div>
+		</header>
+		<main id="container">
+			<header><% folder_comment %></header>
+			<ul id="gallery">
+				<% thumbnails %>
+			</ul>
+		</main>
+		<a href="#top-minigal" id="backtop">top</a>
