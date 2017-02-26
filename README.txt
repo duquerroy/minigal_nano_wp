@@ -1,20 +1,21 @@
 === Minigal Nano WP ===
-Contributors: gduquerroy
+Contributors: Gilles Duquerroy
 Tags: gallery
 Requires at least: 4.0
 Tested up to: 4.6.1
+Stable tag: 4.3
 License: GNU AFFERO GENERAL PUBLIC LICENSE v3 or later
 License URI: https://gnu.org/licenses/agpl-3.0.txt
 
-MinigalNano is a very simple image gallery.
+Minigal Nano WP is a very simple image gallery.
 
 == Description ==
 
-MinigalNano is a very simple image gallery. It adheres to the KISS principle and is very easy to install. MinigalNano does not have a web admin interface: You just upload your images in the photo folder on your server (using FTP, SFTP...). It only requires php and GD (no database, no special libraries like PEAR or ImageMagick).
+Minigal Nano WP is a very simple image gallery. It adheres to the KISS principle and is very easy to install. Minigal Nano WP does not have a web admin interface: You just upload your images in the photo folder on your server (using FTP, SFTP...). It only requires php and GD (no database, no special libraries like PEAR or ImageMagick).
 
-MinigalNano uses a javascript Lightbox (Use left/right arrows for navigation), but it degrades gracefully if javascript is disabled.
+Minigal Nano WP uses a javascript Lightbox (Use left/right arrows for navigation), but it degrades gracefully if javascript is disabled.
 
-MinigalNano is based on [Thomas Rybak's](http://www.minigal.dk/minigal-nano.html) version which seems to have been abandonned in 2010. It adds new themes and icons, use more modern html/css, updates JS libs, and wants to be more community pull-friendly for the future.
+Minigal Nano WP is based on [Thomas Rybak's](http://www.minigal.dk/minigal-nano.html) version which seems to have been abandonned in 2010. It adds new themes and icons, use more modern html/css, updates JS libs, and wants to be more community pull-friendly for the future.
 
 Features
 ============
